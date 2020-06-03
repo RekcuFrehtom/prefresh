@@ -8,7 +8,7 @@ export default function preactRefreshPlugin(config, pluginOptions) {
 
 			return {
 				result: `
-          import '@prefresh/core';
+          import '@prefresh/snowpack/runtime';
           import * as $OriginalModule$ from ${JSON.stringify(urlPath)};
           let $CurrentModule$ = $OriginalModule$;
 
